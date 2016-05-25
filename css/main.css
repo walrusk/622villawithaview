@@ -65,8 +65,7 @@ body.index .page-title {
 .page-title div + div {
 	margin:-20px 0 20px;
 	font-size:24px;
-/* 	color:#959595; */
-	color:#222;
+	color:#fff;
 	font-weight:200;
 }
 
