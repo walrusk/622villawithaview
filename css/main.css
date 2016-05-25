@@ -1,0 +1,511 @@
+/* STRUCTURE */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	background:#242424;
+	font-family:'Source Sans Pro',sans-serif;
+	line-height:1.6;
+}
+
+header,main {
+	background:#fff;
+}
+
+
+/* HEADINGS */
+
+h1 {
+	font-size:48px;
+	text-align:center;
+	font-weight:200;
+	margin:0;
+}
+
+h3 {
+	text-align:center;
+	font-size:32px;
+	font-weight:300;
+	margin:0;
+	padding:1em 0;
+}
+
+.page-title {
+	background:url('../img/view1.jpg') top center no-repeat;
+	background-size:cover;
+	text-align:center;
+	padding:5px 0 50px;
+}
+
+body.index .page-title {
+	height:0;
+	position:relative;
+	z-index:100;
+	padding:0;
+	top:5px;
+}
+
+.page-title div {
+	font-weight:400;
+}
+
+.page-title .main-title {
+	font-size:64px;
+	font-family:'Great Vibes',cursive;
+	padding:20px 0 0;
+	margin:0;
+	color:#D7352B;
+}
+
+.page-title div + div {
+	margin:-20px 0 20px;
+	font-size:24px;
+/* 	color:#959595; */
+	color:#222;
+	font-weight:200;
+}
+
+
+/* SLIDESHOW */
+
+.home-slideshow {
+	max-height:500px;
+	overflow:hidden;
+	margin:0;
+}
+
+.slick-prev {
+	left:25px;
+	z-index:100;
+	font-size:32px;
+}
+
+.slick-next {
+	right:25px;
+	width:48px;	
+}
+
+.slick-prev:before, .slick-next:before {
+	font-size:48px;
+}
+
+img { max-width:100%; }
+
+
+
+
+/* NAVIGATION */
+
+nav {
+	background:#242424;
+}
+
+nav > ul {
+	max-width:1124px;
+	padding:0 50px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+nav li {
+	float:left;
+	list-style-type:none;
+}
+
+nav a {
+	color:#959595;
+	display:block;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-size:14px;
+	padding:15px 25px;
+}
+
+nav a:hover {
+	background:rgba(255,255,255,.05);
+	color:#fff;
+}
+
+.nav-right {
+	float:right;
+}
+
+nav i {
+	margin-right:4px;
+	color:#959595;
+}
+
+nav a:hover i {
+	color:#fff;
+}
+
+
+
+/* LINKS */
+
+a {
+	color:#52dae6;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#d66270;
+}
+
+
+
+
+/* PAGE MENU */
+
+.page-menu {
+	height:0;
+	text-align:center;
+	position:relative;
+	top:-38px;
+}
+
+body.index .page-menu + section {
+	padding-top:80px;
+}
+
+.page-menu ul {
+	margin:0;
+	padding:0;
+}
+
+.page-menu a {
+	display:block;
+}
+
+.page-menu li {
+	list-style-type:none;
+	display:inline-block;
+	padding:0 20px;
+}
+
+.page-menu i {
+	background:#15181F;
+	color:rgba(255,255,255,.9);
+	display:block;
+	padding:25px 0 0;
+	margin-bottom:5px;
+	width:88px; height:88px;
+	font-size:32px;
+	border-radius:50px;
+	text-align:center;
+	border:1px solid rgba(255,255,255,0);
+	transition:all 200ms ease-in-out;
+}
+
+.page-menu span {
+	color:rgba(255,255,255,.9);
+	font-size:12px;
+	text-transform:uppercase;
+}
+
+.page-menu a:hover i,
+.page-menu a:hover span {
+	color:#fff;
+}
+
+.page-menu a:hover i {
+	border:6px solid rgba(255,255,255,1);
+}
+
+
+
+
+/* CONTENT */
+
+section {
+	border:10px solid #15181F;
+	border-left:0; border-right:0;
+	background:url('../img/tile.png') #15181F;
+	color:#fff;
+	padding:50px 0;
+}
+
+.condo-slideshow {
+	max-width:1124px;
+	padding:0 50px;
+	margin:40px auto;
+}
+
+.condo-slideshow > div {
+	margin:0;
+	border:10px solid #15181F;
+	border-left:0; border-right:0;
+}
+
+section p {
+	max-width:1124px;
+	padding:0 50px;
+	margin:0 auto 25px;
+}
+
+
+
+
+/* FORMS */
+
+form {
+  padding:20px 30px 10px;
+  width:600px;
+  border:10px solid #15181F;
+  border-top:0;
+  margin:0 auto 50px;
+  max-width:100%;
+}
+
+.form-row {
+  padding-bottom:20px;
+}
+
+.form-row-columns {
+	overflow:hidden;
+}
+
+.form-row-columns label {
+	width:48%;
+	float:left;
+}
+
+.form-row-columns label + label {
+	float:right;
+}
+
+.form-row span {
+  display:block;
+  padding:3px 0;
+}
+
+.booking_form_status {
+	text-align:center;
+	font-size:20px;
+	font-weight:300;
+	margin-bottom:20px;
+}
+
+.booking_form_status.error,
+.booking_form_status.error i,
+.form-error {
+	color:#D7352B;
+}
+
+.booking_form_status i {
+	margin-right:5px;
+}
+
+input,textarea {
+  color:#000;
+  border:0;
+  padding:15px 10px;
+  width:100%;
+  margin-bottom:2px;
+}
+
+input.error {
+	background:#FFCCCC;
+}
+
+.form-row span + label .fromto {
+  display:none;
+}
+
+input[type=date] {
+  width:48%;
+}
+
+.radio-columns { overflow:hidden; }
+.radio-columns label {
+  width:50%;
+  float:left;
+  position:relative;
+  padding:20px 0 20px 60px;
+  background:rgba(25,124,228,.2);
+  cursor:pointer;
+}
+.radio-columns label:hover,
+.radio-columns label.radio-selected {
+  background:rgba(25,124,228,.5);
+}
+.radio-columns input {
+  position:absolute;
+  top:50%;
+  left:20px;
+  margin-top:-8px;
+}
+.radio-columns small {
+  color:rgba(255,255,255,.6);
+}
+
+
+
+
+/* BUTTONS */
+
+button,
+a.button {
+  background:#1192d3;
+  border:0;
+  width:100%;
+  font-size:36px;
+  padding:28px 50px;
+  font-weight:300;
+  text-transform:uppercase;
+  position:relative;
+  display:block;
+  color:#fff;
+  box-shadow:0 0 30px rgba(0,0,0,.8);
+}
+button:hover,
+a.button:hover { 
+	color:#fff; background-color:rgba(25,124,228,1);
+}
+
+a.button {
+	display:inline;
+}
+
+.button-row {
+	padding:50px 0;
+	text-align:center;
+}
+
+
+/* WEATHER */
+
+.weather h3 {
+	margin:0;
+}
+
+.weather {
+	background:#1192d3;
+	text-align:center;
+	padding:30px 0 50px;
+}
+
+.weather ul {
+	margin:20px 0 0;
+	padding:0;
+}
+
+.weather li {
+	list-style-type:none;
+	display:inline-block;
+	padding:0 15px;
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.weather .day,
+.weather .high,
+.weather .high_alt {
+	display:block;
+	color:#fff;
+	font-size:24px;
+}
+
+.weather .day {
+	text-transform:uppercase;
+	font-size:14px;
+}
+
+.weather a {
+	color:#fff;
+	opacity:.5;
+}
+
+.weather a:hover {
+	opacity:1;
+	text-decoration:underline;
+}
+
+.switch_degrees {
+	margin-top:20px;
+	display:inline-block;
+}
+
+
+
+
+/* COLUMNS */
+
+.row {
+	overflow:hidden;
+	padding:0 50px;
+	max-width:1124px;
+	margin:0 auto;
+}
+
+.column {
+	float:left;
+	padding:5px 0;
+}
+
+.column.quarter {
+	width:25%;
+}
+
+.column.threequarter {
+	width:75%;
+}
+
+
+
+
+/* MAP */
+
+.map {
+	max-width:1124px;
+	margin:0 auto;
+	padding:0 50px;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+
+/* FOOTER */
+
+footer h4 {
+	font-weight:400;
+	text-transform:uppercase;
+	font-size:14px;
+	margin:0 0 15px;
+}
+
+footer {
+	background:url('../img/tile2.png') #242424;
+	color:#fff;
+	padding:80px 0;
+}
+
+footer p {
+	color:#8e9a9e;
+	margin:0;
+}
+
+.footerview {
+	background:url('../img/footerview.jpg') no-repeat top center;
+	background-size:cover;
+	height:221px;
+	border:10px solid #151515;
+}

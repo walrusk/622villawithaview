@@ -1,0 +1,32 @@
+<?php 
+$page = 'index';
+include('_header.php'); ?>
+
+<div class="home-slideshow">
+	<div><img src="img/view1.jpg" alt=""></div>
+	<div><img src="img/view2.jpg" alt=""></div>
+</div>
+
+<div class="page-menu">
+	<ul>
+		<li><a href="rooms.php"><i class="fa fa-bed" aria-hidden="true"></i><span>Rooms</span></a></li>
+		<li><a href="directions.php"><i class="fa fa-map-o" aria-hidden="true"></i><span>Directions</span></a></li>
+		<li><a href="attractions.php"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Attractions</span></a></li>
+		<li><a href="dining.php"><i class="fa fa-cutlery" aria-hidden="true"></i><span>Dining</span></a></li>
+	</ul>
+</div>
+
+<?php include('_book.php'); ?>
+
+<div class="weather">
+	
+	<h3>Weather Forecast</h3>
+	
+	<ul>
+	</ul>
+	
+	<a href="#" class="switch_degrees">Switch to &deg;C</a>
+	
+</div>
+
+<?php include('_footer.php'); ?>
