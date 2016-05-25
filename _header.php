@@ -18,7 +18,7 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="index.php">Home</a></li>
+				<li><a href="/">Home</a></li>
 				<li><a href="rooms.php">Rooms</a></li>
 				<li><a href="directions.php">Directions</a></li>
 				<li><a href="attractions.php">Attractions</a></li>

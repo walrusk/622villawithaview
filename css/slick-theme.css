@@ -89,11 +89,11 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '\2190';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '\2192';
 }
 
 .slick-next

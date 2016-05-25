@@ -27,7 +27,7 @@ $('.radio-columns input').on('change',function(){
 
 // WEATHER
 $.simpleWeather({
-	location: 'Austin, TX',
+	location: 'St. Thomas, USVI',
 	woeid: '',
 	unit: 'f',
 	success: function(weather) {
