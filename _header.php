@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Secret Harbor Villas</title>
+	<title>Harbour Beach Villas</title>
 	<meta name="description" content="Queue">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700|Great+Vibes' rel='stylesheet' type='text/css'>
@@ -19,16 +19,16 @@
 		<nav>
 			<ul>
 				<li><a href="/">Home</a></li>
-				<li><a href="rooms.php">Rooms</a></li>
-				<li><a href="directions.php">Directions</a></li>
-				<li><a href="attractions.php">Attractions</a></li>
-				<li><a href="dining.php">Dining</a></li>
-				<li class="nav-right"><a href="index.php#book"><i class="fa fa-bed" aria-hidden="true"></i> Book A Room</a></li>
+				<li><a href="rooms">Rooms</a></li>
+				<li><a href="directions">Directions</a></li>
+				<li><a href="attractions">Attractions</a></li>
+				<li><a href="dining">Dining</a></li>
+				<li class="nav-right"><a href="/#book"><i class="fa fa-bed" aria-hidden="true"></i> Book A Room</a></li>
 			</ul>
 		</nav>
 		
 		<div class="page-title">		
-			<div class="main-title">Secret Harbor Villas</div>
+			<div class="main-title">Harbour Beach Villas</div>
 			<div>St. Thomas, USVI</div>
 		</div>
 	</header>
