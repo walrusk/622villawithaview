@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+RewriteEngine On
+ 
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^attractions$ ./attractions.php 
+RewriteRule ^dining$ ./dining.php
+RewriteRule ^directions$ ./directions.php
+RewriteRule ^rooms$ ./directions.php
