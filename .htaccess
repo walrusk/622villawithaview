@@ -7,4 +7,4 @@ RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteRule ^attractions$ ./attractions.php 
 RewriteRule ^dining$ ./dining.php
 RewriteRule ^directions$ ./directions.php
-RewriteRule ^rooms$ ./directions.php
+RewriteRule ^rooms$ ./rooms.php
