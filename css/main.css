@@ -11,6 +11,7 @@ body {
 	background:#242424;
 	font-family:'Source Sans Pro',sans-serif;
 	line-height:1.6;
+	font-size:18px;
 }
 
 header,main {
@@ -18,13 +19,20 @@ header,main {
 }
 
 
-/* HEADINGS */
+/* HEADINGS / CONTENT */
 
 h1 {
 	font-size:48px;
 	text-align:center;
 	font-weight:200;
 	margin:0;
+}
+
+h2 {
+	font-size:32px;
+	font-weight:300;
+	margin:0;
+	padding:1em 0;
 }
 
 h3 {
@@ -69,6 +77,75 @@ body.index .page-title {
 	font-weight:200;
 }
 
+section > h2,
+section p {
+	max-width:1124px;
+	padding:0 50px;
+	margin:0 auto 25px;
+}
+
+.subtitle {
+	
+}
+
+.subtitle.centered {
+	text-align:center;
+}
+
+section {
+	border:10px solid #15181F;
+	border-left:0; border-right:0;
+	background:url('../img/tile.png') #15181F;
+	color:#fff;
+	padding:50px 0;
+}
+
+.image-block {
+	max-width:1124px;
+	padding:0 50px;
+	margin:0 auto 25px;
+	clear:left;
+	overflow:hidden;
+}
+
+.image-block img {
+	float:left;
+	margin:0 25px 0 0;
+	border: 10px solid #15181F;
+	border-left: 0;
+	border-right: 0;
+}
+
+.image-block p {
+	padding:5px 0 0;
+}
+
+.image-block ul {
+	list-style-type:none;
+}
+
+.image-block i {
+	width:25px;
+	text-align:center;
+}
+
+.image-block ul.list {
+	list-style-type:disc;
+}
+
+
+/* LINKS */
+
+a {
+	color:#52dae6;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#d66270;
+}
+
+
 
 /* SLIDESHOW */
 
@@ -95,6 +172,29 @@ body.index .page-title {
 
 img { max-width:100%; }
 
+.page-slideshow {
+	max-width:1124px;
+	padding:20px 50px;
+	margin:0 auto;
+}
+
+.page-slideshow > div {
+	margin:0;
+	border:10px solid #15181F;
+	border-left:0; border-right:0;
+}
+
+.slick-slide {
+	position:relative;
+}
+
+.caption {
+	position:absolute;
+	left:40px; bottom:20px;
+	font-size:32px;
+	font-weight:200;
+	text-shadow:1px 1px 0 rgba(0,0,0,.8);
+}
 
 
 
@@ -141,19 +241,6 @@ nav i {
 
 nav a:hover i {
 	color:#fff;
-}
-
-
-
-/* LINKS */
-
-a {
-	color:#52dae6;
-	text-decoration:none;
-}
-
-a:hover {
-	color:#d66270;
 }
 
 
@@ -214,37 +301,6 @@ body.index .page-menu + section {
 
 .page-menu a:hover i {
 	border:6px solid rgba(255,255,255,1);
-}
-
-
-
-
-/* CONTENT */
-
-section {
-	border:10px solid #15181F;
-	border-left:0; border-right:0;
-	background:url('../img/tile.png') #15181F;
-	color:#fff;
-	padding:50px 0;
-}
-
-.condo-slideshow {
-	max-width:1124px;
-	padding:0 50px;
-	margin:40px auto;
-}
-
-.condo-slideshow > div {
-	margin:0;
-	border:10px solid #15181F;
-	border-left:0; border-right:0;
-}
-
-section p {
-	max-width:1124px;
-	padding:0 50px;
-	margin:0 auto 25px;
 }
 
 
@@ -371,9 +427,20 @@ a.button {
 	display:inline;
 }
 
+.small > .button {
+	font-size:24px;
+	padding:16px 25px;
+}
+
 .button-row {
+	margin-top:50px;
 	padding:50px 0;
 	text-align:center;
+}
+
+.small.button-row {
+	margin-top:0;
+	padding-top:20px;
 }
 
 

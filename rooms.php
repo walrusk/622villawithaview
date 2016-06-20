@@ -12,31 +12,61 @@ include('_header.php'); ?>
 
 	<h1>Rooms</h1>
 	
-	<div class="condo-slideshow">
-		<div>
-			<?php $files = glob('img/slides_condo/*.{jpg,png,gif}', GLOB_BRACE);
-			foreach($files as $file) { ?>
-				<div><img data-lazy="<?php echo $file; ?>" alt="St. Thomas Condo"></div>
-			<?php } ?>
-		</div>
-	</div>
+	<h2>Balcony</h2>
 	
-	<p>The living room features gorgeous leather couches and chairs many of which rock back and have flip up foot rests. There is a large flat screen TV and the balcony doors open up for that  balmy ocean air. There are 3 very effective top of the line whisper quiet air conditioners in the unit and these will keep you cool if so desired. Please be sure to switch them off when you go out as electricity is very expensive on the island.</p>
-
-	<p>These pictures show the dining room area  at the 8 seater table however we have moved 2 of the chairs to the breakfast bar area. These pictures also show how the dining area relates to the rest of the condo.</p>
-
-	<p>Bath towels and beach towels are supplied as is your first bar of soap. Get toilet paper and soap etc at your first trip to the grocery store. There is a hair dryer in each bathroom for your use and convenience and there is also one of those magnifier mirrors for …….well close viewing lol. Water is safe to drink. </p>
-
+	<p>A beautiful balcony with an incredible view. The balcony sliding doors open wide to let that balmy ocean air into the condo.</p>
+	
+	<?php slideShow(array(
+		'view' => 'View from the Balcony',
+		'balcony' => 'Dining Area on the Balcony',
+		'balcony2' => 'Lounging Area on the Balcony'
+	)); ?>
+	
+	<h2>Living Area</h2>
+	
+	<p>The living room features gorgeous leather couches and chairs many of which rock back and have flip up foot rests so you can relax and watch the large flat screen TV.</p>
+	
+	<?php slideShow(array(
+		'livingarea' => 'The Living Room and Dining Room',
+		'livingarea2' => 'Seating in the Living Room',
+		'livingarea3' => 'Inside the Condo from the Balcony',
+		'kitchen' => 'The Kitchen'
+	)); ?>
+	
+	<h2>Bedrooms</h2>
+	
 	<p>Both bedrooms are approximately the same size and they both have comfy king size beds, and closets and dressers for clothes storage. Both bedrooms have flat screen TVs on the wall as shown in the picture to the left. There are telephones for local calls and alarm clocks that have iPod docks.</p>
-
-	<p>The condo is tiled throughout to accommodate the hot weather and sea sand tracking. If you don’t want to sweep up sand all week long, in the cupboard to the left of the sink is a foot bath that we usually fill with water and have outside the front door to dip our feet prior to coming inside. This makes your life a little more pleasant :) The chair is ideal for putting luggage onto so that you can unpack easily. There are plenty of hangars in the closet and there is a safe in the closet of each bedroom. There are instructions on how to operate it written on the safe. Each bedroom has a whisper quiet air conditioner complete with remote control. Please switch these air conditioners and the lights off when you leave the condo. Sleep well :)</p>
-
-	<p>That gorgeous looking cupboard is actually a Murphy Bed which folds down. This is not one of those uncomfortable folding bed and mattress. This is a full queen size pillow top high quality bed and full mattress. Very comfortable. During the day it lifts back into the cupboard and this gives one more space. There is a small closet to the right of the bed. Flip the feet up before pulling down &amp; find bedding in the closet.</p>
+	
+	<?php slideShow(array(
+		'bedroom1' => 'The Main Bedroom',
+		'bedroom2' => 'The Second Bedroom',
+		'bathroom' => 'The Main Bathroom',
+		'bathroom2' => 'The Second Bathroom'
+	)); ?>
 
 	<div class="button-row">
 		<a href="index.php#book" class="button">Book A Room</a>
 	</div>
 
 </section>
+
+<?php
+	function slideShow($images) {
+		?>
+		<div class="page-slideshow">
+			<div>
+				<?php foreach($images as $img => $caption): ?>
+					<div>
+						<img data-lazy="img/slides_condo/<?php echo $img; ?>.jpg" alt="<?php echo $caption; ?>">
+						<span class="caption">
+							<i class="fa fa-angle-double-right" aria-hidden="true"></i> <?php echo $caption; ?>
+						</span>
+					</div>
+				<?php endforeach; ?>
+			</div>
+		</div>
+		<?php
+	}
+?>
 
 <?php include('_footer.php'); ?>

@@ -8,3 +8,4 @@ RewriteRule ^attractions$ ./attractions.php
 RewriteRule ^dining$ ./dining.php
 RewriteRule ^directions$ ./directions.php
 RewriteRule ^rooms$ ./rooms.php
+RewriteRule ^secretbeach$ ./secretbeach.php

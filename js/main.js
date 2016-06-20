@@ -9,14 +9,17 @@ $('.home-slideshow').slick({
 	adaptiveHeight: true
 });
 
-$('.condo-slideshow > div').slick({
-	autoplay: true,
-	autoplaySpeed: 10000,
-	arrows: true,
-	speed: 300,
-	swipeToSlide: true,
-	pauseOnHover: false,
-	lazyLoad: 'progressive'
+$('.page-slideshow > div').each(function(){
+	$(this).slick({
+		autoplay: true,
+		fade: true,
+		autoplaySpeed: 10000,
+		arrows: true,
+		speed: 300,
+		swipeToSlide: true,
+		pauseOnHover: false,
+		lazyLoad: 'progressive'
+	})
 });
 
 // RADIO COLUMNS CLASS
