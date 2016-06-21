@@ -35,7 +35,7 @@ include('_header.php'); ?>
 	
 	<h2>Bedrooms</h2>
 	
-	<p>Both bedrooms are approximately the same size and they both have comfy king size beds, and closets and dressers for clothes storage. Both bedrooms have flat screen TVs on the wall as shown in the picture to the left. There are telephones for local calls and alarm clocks that have iPod docks.</p>
+	<p>Both bedrooms are approximately the same size and they both have comfy king size beds, and closets and dressers for clothes storage. Both bedrooms have flat screen TVs on the wall. There are telephones for local calls and alarm clocks that have iPod docks.</p>
 	
 	<?php slideShow(array(
 		'bedroom1' => 'The Main Bedroom',
