@@ -34,6 +34,7 @@ $.simpleWeather({
 	woeid: '',
 	unit: 'f',
 	success: function(weather) {
+		console.log(weather);
 		var weather_ul = $('.weather ul');
 		var forecast_days = 5;
 		if(weather.forecast.length >= forecast_days) {

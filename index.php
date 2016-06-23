@@ -16,17 +16,18 @@ include('_header.php'); ?>
 	</ul>
 </div>
 
-<?php include('_book.php'); ?>
+<section class="book">
+	<h3 id="book">Book a Room</h3>
+	<?php include('_book.php'); ?>
+</section>
 
-<div class="weather">
-	
+<section class="weather">
 	<h3>Weather Forecast</h3>
 	
 	<ul>
 	</ul>
 	
 	<a href="#" class="switch_degrees">Switch to &deg;C</a>
-	
-</div>
+</section>
 
 <?php include('_footer.php'); ?>

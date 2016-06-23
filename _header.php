@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html><?php include('_functions.php'); ?>
 <html class="no-js" lang="">
 <head>
 	<meta charset="utf-8">
@@ -27,9 +27,14 @@
 			</ul>
 		</nav>
 		
-		<div class="page-title">		
-			<div class="main-title">Harbour Beach Villas</div>
-			<div>St. Thomas, USVI</div>
+		<div class="page-title page-title-<?php echo $page; ?>">
+			<?php if($page == 'index'): ?>
+				<h1 class="main-title">Harbour Beach Villas</h1>
+				<h2 class="sub-title">St. Thomas, USVI</h2>
+			<?php else: ?>
+				<div class="main-title">Harbour Beach Villas</div>
+				<div class="sub-title">St. Thomas, USVI</div>
+			<?php endif; ?>
 		</div>
 	</header>
 
