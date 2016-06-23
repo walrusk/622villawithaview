@@ -4,7 +4,7 @@ include('_header.php'); ?>
 
 <div class="page-menu">
 	<ul>
-		<li><i class="fa fa-map-marker" aria-hidden="true"></i></li>
+		<li><i class="fa fa-sun-o" aria-hidden="true"></i></li>
 	</ul>
 </div>
 
