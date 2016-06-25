@@ -24,30 +24,59 @@ $('.page-slideshow > div').each(function(){
 });
 
 // MOBILE MENU
-
-var $page = $('main,.page-title');
-
-$('.mobile-hamburger').on('click',function(){
-	event.preventDefault();
+var MobileMenu = {
 	
-	var $hamburger = $(this);
-	var $mainmenu = $('.main-menu');
+	$body: $('body'),
+	$page: $('main'),
+	$hamburger: $('.mobile-hamburger'),
+	$mainmenu: $('.main-menu'),
+	$mainoverlay: $('.mobile-menu-overlay'),
 	
-	if($hamburger.hasClass('mobile-menu-open')) {
-		$hamburger.removeClass('mobile-menu-open');
-		$mainmenu.animate({ 'margin-right': 0 }, 300);
-		$page.animate({ left: 0 }, 300);
-	} else {
-		var mainmenu_width = $mainmenu.outerWidth(true);
-		$hamburger.addClass('mobile-menu-open');
-		$mainmenu.animate({ 'margin-right': mainmenu_width * -1 }, 300);
-		$page.animate({ left: mainmenu_width }, 300);
+	menuOpen: false,
+	
+	open: function() {
+		if( ! MobileMenu.menuOpen) {
+			MobileMenu.menuOpen = true;
+			
+			var mainmenu_width = MobileMenu.$mainmenu.outerWidth(true);
+			MobileMenu.$mainmenu.animate({ 'margin-right': mainmenu_width * -1 }, 300);
+			MobileMenu.$page.animate({ left: mainmenu_width }, 300);
+			MobileMenu.$mainoverlay.fadeIn(300);
+			
+			MobileMenu.$body.css('overflow','hidden');
+			
+			MobileMenu.$page.on('click', MobileMenu.close);
+		}
+	},
+	
+	close: function() {
+		if(MobileMenu.menuOpen) {
+			MobileMenu.menuOpen = false;
+			
+			MobileMenu.$hamburger.removeClass('mobile-menu-open');
+			MobileMenu.$mainmenu.animate({ 'margin-right': 0 }, 300);
+			MobileMenu.$page.animate({ left: 0 }, 300);
+			MobileMenu.$mainoverlay.fadeOut(300);
+			
+			MobileMenu.$body.css('overflow','visible');
+			
+			MobileMenu.$page.off('click');
+		}
+	},
+	
+	init: function() {
+		MobileMenu.$hamburger.on('click',function(){
+			event.preventDefault();
+			if(MobileMenu.menuOpen) {
+				MobileMenu.close();
+			} else {
+				MobileMenu.open();
+			}
+		});
 	}
-});
+};
 
-$page.on('click',function(){
-	
-});
+MobileMenu.init();
 
 // RADIO COLUMNS CLASS
 $('.radio-columns input').on('change',function(){

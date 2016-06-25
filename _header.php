@@ -31,7 +31,9 @@
 				<li class="nav-right"><a href="/#book"><i class="fa fa-bed" aria-hidden="true"></i> Book A Room</a></li>
 			</ul>
 		</nav>
-		
+	</header>
+
+	<main>
 		<div class="page-title page-title-<?php echo $page; ?>">
 			<?php if($page == 'index'): ?>
 				<h1 class="main-title">Harbour Beach Villas</h1>
@@ -41,6 +43,3 @@
 				<div class="sub-title">St. Thomas, USVI</div>
 			<?php endif; ?>
 		</div>
-	</header>
-
-	<main>
