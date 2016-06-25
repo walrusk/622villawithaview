@@ -1,7 +1,7 @@
 <?php
 
 // EMAIL RECIPIENT / SENDER
-$to = 'walrusk+thomasbooking@gmail.com';
+$to = 'walrusk+thomasbooking@gmail.com, ncstobart@gmail.com';
 
 $jsonresult = array(
   'email' => NULL
@@ -23,7 +23,7 @@ $contact_info_keys = array_keys($contact_info);
 $contact_info = (object)$contact_info;
 
 // SEND EMAIL WITH FIELD INFO
-$subject = 'SHV Booking from '.$contact_info->name;
+$subject = 'HBV Booking Request from '.$contact_info->name;
 
 $headers = "From: " . $contact_info->name.' <'.$contact_info->email.'>' . "\r\n";
 $headers .= "Reply-To: ". $contact_info->email . "\r\n";
