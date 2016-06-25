@@ -1,3 +1,4 @@
+// SLIDESHOWS
 $('.home-slideshow').slick({
 	autoplay: true,
 	autoplaySpeed: 20000,
@@ -20,6 +21,32 @@ $('.page-slideshow > div').each(function(){
 		pauseOnHover: false,
 		lazyLoad: 'progressive'
 	})
+});
+
+// MOBILE MENU
+
+var $page = $('main,.page-title');
+
+$('.mobile-hamburger').on('click',function(){
+	event.preventDefault();
+	
+	var $hamburger = $(this);
+	var $mainmenu = $('.main-menu');
+	
+	if($hamburger.hasClass('mobile-menu-open')) {
+		$hamburger.removeClass('mobile-menu-open');
+		$mainmenu.animate({ 'margin-right': 0 }, 300);
+		$page.animate({ left: 0 }, 300);
+	} else {
+		var mainmenu_width = $mainmenu.outerWidth(true);
+		$hamburger.addClass('mobile-menu-open');
+		$mainmenu.animate({ 'margin-right': mainmenu_width * -1 }, 300);
+		$page.animate({ left: mainmenu_width }, 300);
+	}
+});
+
+$page.on('click',function(){
+	
 });
 
 // RADIO COLUMNS CLASS

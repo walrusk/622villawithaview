@@ -46,7 +46,7 @@ include('_header.php'); ?>
 		
 		<img class="feature-left" src="img/attractions/Zipline.jpg" alt="Zipline">
 		
-		<p><a href="http://www.ziplinestthomas.com/" target="_blank"><i class="fa fa-external-link-square" aria-hidden="true"></i> ziplinestthomas.com</a></p>
+		<p><a href="http://www.ziplinestthomas.com/" target="_blank"><i class="fa fa-external-link-square" aria-hidden="true"></i> zipline&#8203;stthomas.com</a></p>
 		
 		<p>This zip line is definitely worth doing.</p>
 		

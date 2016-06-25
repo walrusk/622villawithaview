@@ -17,12 +17,17 @@
 <body class="<?php echo $page; ?>">
 	<header>
 		<nav>
-			<ul>
+			<ul class="mobile-hamburger">
+				<li><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			</ul>
+			<ul class="main-menu">
 				<li><a href="/">Home</a></li>
 				<li><a href="rooms">Rooms</a></li>
 				<li><a href="directions">Directions</a></li>
 				<li><a href="attractions">Attractions</a></li>
 				<li><a href="dining">Dining</a></li>
+			</ul>
+			<ul>
 				<li class="nav-right"><a href="/#book"><i class="fa fa-bed" aria-hidden="true"></i> Book A Room</a></li>
 			</ul>
 		</nav>
