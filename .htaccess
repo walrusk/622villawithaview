@@ -2,16 +2,6 @@
 	Options +FollowSymLinks
 	RewriteEngine On
 	 
-	RewriteCond %{SCRIPT_FILENAME} !-d
-	RewriteCond %{SCRIPT_FILENAME} !-f
-	
-	RewriteRule ^attractions$ ./attractions.php 
-	RewriteRule ^dining$ ./dining.php
-	RewriteRule ^directions$ ./directions.php
-	RewriteRule ^rooms$ ./rooms.php
-	RewriteRule ^secretbeach$ ./secretbeach.php
-	
-	
 	# Adaptive-Images -----
 	
 	# Add any directories you wish to omit from the Adaptive-Images process on a new line, as follows:
@@ -22,5 +12,14 @@
 	# to adaptive-images.php so we can select appropriately sized versions
 	RewriteRule \.(?:jpe?g|gif|png)$ adaptive-images.php
 	
-	# END Adaptive-Images -----
+	# END Adaptive-Images ----- 
+	 
+	RewriteCond %{SCRIPT_FILENAME} !-d
+	RewriteCond %{SCRIPT_FILENAME} !-f
+	
+	RewriteRule ^attractions$ ./attractions.php 
+	RewriteRule ^dining$ ./dining.php
+	RewriteRule ^directions$ ./directions.php
+	RewriteRule ^rooms$ ./rooms.php
+	RewriteRule ^secretbeach$ ./secretbeach.php
 </IfModule>

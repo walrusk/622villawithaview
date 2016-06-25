@@ -7,7 +7,7 @@
 	<meta name="description" content="Queue">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
+	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
 	
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700|Great+Vibes' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
