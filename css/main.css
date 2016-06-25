@@ -733,6 +733,11 @@ body.index .page-menu + section {
 	
 	.page-title {
 		font-size:12px;
+		height:150px;
+	}
+	
+	.page-title-index {
+		height:0;
 	}
 	
 	.page-menu {
