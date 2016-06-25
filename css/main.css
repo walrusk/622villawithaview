@@ -404,6 +404,22 @@ input[type=date] {
 }
 .radio-columns small {
   color:rgba(255,255,255,.6);
+  display:inline;
+}
+
+.form-row .room-bedrooms,
+.form-row .room-sleeps {
+	display:inline;
+	white-space:nowrap;
+}
+
+.room-bedrooms {
+	margin-right:10px;
+}
+
+.room-price {
+  color:rgba(255,255,255,.6);
+  font-size:80%;
 }
 
 

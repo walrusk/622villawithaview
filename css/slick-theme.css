@@ -94,7 +94,7 @@
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '\2192';
+    content: '\2190';
 }
 
 .slick-next
@@ -108,11 +108,11 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: '\2192';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '\2192';
 }
 
 /* Dots */

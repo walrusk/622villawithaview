@@ -5,13 +5,15 @@
 		<div class="radio-columns">
 			<label>
 				<input type="radio" name="c_bedrooms" value="1" checked="checked">
-				<span>1 Bedroom</span>
-				<small>Accomodates 4</small>
+				<span class="room-bedrooms">1 Bedroom</span>
+				<small class="room-sleeps">Sleeps 4</small>
+				<span class="room-price">from $235 USD / night</span>
 			</label>
 			<label>
 				<input type="radio" name="c_bedrooms" value="2">
-				<span>2 Bedrooms</span>
-				<small>Accomodates 6</small>
+				<span class="room-bedrooms">2 Bedrooms</span>
+				<small class="room-sleeps">Sleeps 6</small>
+				<span class="room-price">from $400 USD / night</span>
 			</label>
 		</div>
 	</div>
