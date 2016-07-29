@@ -1,7 +1,8 @@
 <?php
 
 // EMAIL RECIPIENT
-$to = 'toninicholson@remax.net, walrusk+thomasbooking@gmail.com';
+$to = 'toninicholson@remax.net';
+$bcc = 'walrusk+thomasbooking@gmail.com';
 
 $jsonresult = array(
   'email' => NULL
@@ -23,12 +24,13 @@ $contact_info_keys = array_keys($contact_info);
 $contact_info = (object)$contact_info;
 
 // SEND EMAIL WITH FIELD INFO
-$subject = 'HBV Booking Request from '.$contact_info->name;
+$subject = 'Booking Request For 622';
 
-$headers = "From: " . $contact_info->name.' <'.$contact_info->email.'>' . "\r\n";
+$headers = 'From: ' . $contact_info->name.' <'.$contact_info->email.'>' . "\r\n";
 $headers .= "Reply-To: ". $contact_info->email . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+$headers .= 'Bcc: ' . $bcc . "\r\n";
 
 $message = file_get_contents('booking_email.html');
 
