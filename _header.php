@@ -16,8 +16,7 @@
 	
 	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
 	
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700|Great+Vibes' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700|Great+Vibes|Allura' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/slick.css">
