@@ -31,7 +31,7 @@ include('_header.php'); ?>
 		<h2>Iggies</h2>
 		<img class="feature-left" src="img/dining/Iggies.jpg" alt="Iggies">
 		
-		<p>Located a few feet from the water’s edge, Iggies Beach Bar & Grill is an island hot-spot both day and night. Iggies is the only place on St. Thomas where you’ll find live entertainment 365 days a year. You might be here for one of our famous "Bands in the Sand" concerts, or some other special event such as our Super Bowl Tailgate Party or our weekly Carnival Extravaganza. What ever the reason, good times are waiting for you here at Iggies Beach Bar.</p>
+		<p>Located a few feet from the water's edge, Iggies Beach Bar & Grill is an island hot-spot both day and night. Iggies is the only place on St. Thomas where you'll find live entertainment 365 days a year. You might be here for one of our famous "Bands in the Sand" concerts, or some other special event such as our Super Bowl Tailgate Party or our weekly Carnival Extravaganza. What ever the reason, good times are waiting for you here at Iggies Beach Bar.</p>
 		
 		<ul class="link-list">
 			<li><i class="fa fa-external-link-square" aria-hidden="true"></i> <a href="http://www.iggiesbeachbar.com/" target="_blank">Website</a></li>

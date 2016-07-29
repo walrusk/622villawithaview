@@ -122,19 +122,26 @@ h5 {
 
 .main-title {
 	color:#D7352B;
-	font:400 360%/1 'Great Vibes',cursive;
+	font:400 320%/1 'Great Vibes',cursive;
 	margin:0;
-	padding:2.5rem 0 0;
+	padding:1.2rem 0 0;
+}
+
+.main-title > span {
+	font:400 120%/1 'Allura',sans-serif;
+	display:block;
+	line-height:.7;
 }
 
 .sub-title {
 	font-size:132%;
 	font-weight:200;
 	line-height:1;
+	text-shadow:0 0 1px rgba(0,0,0,.7);
 	text-align:center;
 	margin:0 auto;
 	width:80%;
-	padding:.5rem 0;
+	padding:0;
 }
 
 

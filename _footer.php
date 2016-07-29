@@ -8,13 +8,13 @@
 		<div class="row">
 			<div class="column quarter">
 				<h5>Location</h5>
-				<p>Secret Harbor Villas</p>
+				<p><?php echo $mainTitle; ?></p>
 				<p>6281 Estate Nazareth</p>
 				<p>St. Thomas, 00802-1114</p>
 				<p>Virgin Islands (USA)</p>
 				<p><a href="directions">View Map</a></p>
 				<br>
-				<p>Tel. <a href="tel:1-204-770-4427">+1 (204) 770-4427</a></p>
+				<p>Tel. <a href="tel:1-340-775-6000">+1 340-775-6000</a></p>
 			</div>
 			
 			<div class="column threequarter footerview">

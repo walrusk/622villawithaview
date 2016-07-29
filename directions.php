@@ -12,7 +12,7 @@ include('_header.php'); ?>
 
 	<h1>Directions</h1>
 	
-	<h4>It takes approximately 45 minutes to drive from East to West. Harbour Beach Villas is in the East End of the island.</h4>
+	<h4>It takes approximately 45 minutes to drive from East to West. 622 Villa with a View is in the East End of the island.</h4>
 
 	<article>
 		<div class="map">
@@ -25,7 +25,7 @@ include('_header.php'); ?>
 	
 		<p>Taxis are a popular transportation choice for visitors to St. Thomas. While there isn't a standard type of taxi vehicle, the most popular are vans, open air safaris (converted trucks; truck beds are customized with bench seating in an open-air covered area) and SUVs/cars. Taxis on St. Thomas are not metered; rates are per person and per destination and are set by the VI Taxicab Division. Taxi Rates can be found on the website www.vinow.com</p>
 	
-		<p>The airport (STT) is about 30- 45 minutes from Harbour Beach Villas depending on traffic which varies with the time of day and if there are cruise ships visiting the island. We recommend that when you first arrive that you take a taxi so that you don’t struggle to find Secret Harbour…..it is a secret after all. ha ha. Then you can arrange a car. The jeep rental guy that we use will actually deliver a jeep to Harbour Beach Villas for you. www.jeepsvi.com  Book early.</p>
+		<p>The airport (STT) is about 30 - 45 minutes from 622 Villa with a View depending on traffic which varies with the time of day and if there are cruise ships visiting the island. We recommend that when you first arrive that you take a taxi so that you don't struggle to find Secret Harbour... it is a secret after all. ha ha. Then you can arrange a car. The jeep rental guy that we use will actually deliver a jeep to 622 Villa with a View for you. www.jeepsvi.com  Book early.</p>
 	</article>
 
 	<div class="button-row">
