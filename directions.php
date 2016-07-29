@@ -16,7 +16,7 @@ include('_header.php'); ?>
 
 	<article>
 		<div class="map">
-			<div class="google-maps"><iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d121194.37984893536!2d-64.98212728920875!3d18.33248045844504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0x8c051ba12ea1f9e3%3A0x94309a676dd7de7e!2sCyril+E.+King+Airport%2C+Airport+Road%2C+Charlotte+Amalie+West%2C+St.+Thomas%2C+U.S.+Virgin+Islands!3m2!1d18.336061!2d-64.972273!4m3!3m2!1d18.318428!2d-64.851072!5e0!3m2!1sen!2sca!4v1434818102115" width="600" height="450" frameborder="0" style="border:0"></iframe></div>
+			<div class="google-maps"><iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d121194.37984893536!2d-64.98212728920875!3d18.33248045844504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0x8c051ba12ea1f9e3%3A0x94309a676dd7de7e!2sCyril+E.+King+Airport%2C+Airport+Road%2C+Charlotte+Amalie+West%2C+St.+Thomas%2C+U.S.+Virgin+Islands!3m2!1d18.336061!2d-64.972273!4m3!3m2!1d18.318428!2d-64.851072!5e0!3m2!1sen!2sca!4v1434818102115&scrollwheel=false" width="600" height="450" frameborder="0" style="border:0"></iframe></div>
 		</div>
 	
 		<p>The island has many regular taxis from compact size to large vans, as well as open-air, covered trucks called "safaris" with bench seats. The latter usually operate only between high-traffic points, e.g., cruise-ship terminals at Havensight and Crown Bay and downtown Charlotte Amalie. Typically they are the cheapest way to navigate the islands.</p>

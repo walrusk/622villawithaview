@@ -649,6 +649,9 @@ body.index .page-menu + section {
   height: 100% !important;
 }
 
+.scrolloff {
+	pointer-events: none;
+}
 
 
 /* Weather */

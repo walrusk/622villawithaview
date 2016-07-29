@@ -23,6 +23,7 @@ $('.page-slideshow > div').each(function(){
 	})
 });
 
+
 // MOBILE MENU
 var MobileMenu = {
 	
@@ -78,11 +79,13 @@ var MobileMenu = {
 
 MobileMenu.init();
 
+
 // RADIO COLUMNS CLASS
 $('.radio-columns input').on('change',function(){
 	$(this).parents('.radio-columns').find('label').removeClass('radio-selected');
 	$(this).parents('label').addClass('radio-selected');
 });
+
 
 // WEATHER
 $.simpleWeather({
@@ -125,6 +128,26 @@ $('.switch_degrees').on('click',function(event){
 	}
 	
 });
+
+
+// GOOGLE MAP
+$(function () {
+	$('.google-maps iframe').addClass('scrolloff');
+	
+	$('.google-maps').on('mouseup', function() {
+	    $('.google-maps iframe').addClass('scrolloff'); 
+	});
+	
+	$('.google-maps').on('mousedown', function() {
+	    $('.google-maps iframe').removeClass('scrolloff');
+	});
+	
+	$('.google-maps iframe').mouseleave(function () {
+	    $('.google-maps iframe').addClass('scrolloff');
+	});
+	
+});
+
 
 // CONTACT FORM
 var form = $('.booking_form');
