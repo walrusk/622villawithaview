@@ -1,7 +1,7 @@
 <?php
 
 // EMAIL RECIPIENT
-$to = 'walrusk+test@gmail.com';//'harbourbeachvillas@gmail.com';
+$to = 'harbourbeachvillas@gmail.com';
 $bcc = 'toninicholson@remax.net, walrusk+thomasbooking@gmail.com';
 
 $jsonresult = array(
