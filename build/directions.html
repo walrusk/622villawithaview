@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>622 Villa with a View - St. Thomas, USVI</title>
+	<meta name="description" content="Queue">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700|Great+Vibes|Allura' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">	
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/weather.css">
+</head>
+<body class="index">
+	<header>
+		<nav>
+			<ul class="mobile-hamburger">
+				<li><a href="directions.html#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			</ul>
+			<ul class="main-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="rooms.php.html">Rooms</a></li>
+				<li><a href="directions.php.html">Directions</a></li>
+				<li><a href="attractions.php.html">Attractions</a></li>
+				<li><a href="dining.php.html">Dining</a></li>
+			</ul>
+			<ul>
+				<li class="nav-right"><a href="index.html#book"><i class="fa fa-bed" aria-hidden="true"></i> Book A Room</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div class="page-title page-title-index">
+							<h1 class="main-title"><span>622</span> Villa with a View</h1>
+				<h2 class="sub-title">St. Thomas, USVI</h2>
+					</div>
+<div class="home-slideshow">
+	<div><img src="img/view1.jpg" alt=""></div>
+	<div><img src="img/view2.jpg" alt=""></div>
+</div>
+
+<div class="page-menu">
+	<ul>
+		<li><a href="rooms.php.html"><i class="fa fa-bed" aria-hidden="true"></i><span>Rooms</span></a></li>
+		<li><a href="directions.php.html"><i class="fa fa-map-o" aria-hidden="true"></i><span>Directions</span></a></li>
+		<li><a href="attractions.php.html"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Attractions</span></a></li>
+		<li><a href="dining.php.html"><i class="fa fa-cutlery" aria-hidden="true"></i><span>Dining</span></a></li>
+	</ul>
+</div>
+
+<section class="book">
+	<h3 id="book">Book a Room</h3>
+	<form method="post" action="http://localhost:8000/_contact.php" class="booking_form">
+	<div class="form-row">
+		<span>Number of Bedrooms Needed</span>
+
+		<div class="radio-columns">
+			<label>
+				<input type="radio" name="c_bedrooms" value="1" checked="checked">
+				<span class="room-bedrooms">1 Bedroom</span>
+				<small class="room-sleeps">Sleeps 4</small>
+			</label>
+			<label>
+				<input type="radio" name="c_bedrooms" value="2">
+				<span class="room-bedrooms">2 Bedrooms</span>
+				<small class="room-sleeps">Sleeps 6</small>
+			</label>
+		</div>
+	</div>
+	<div class="form-row form-row-columns">
+		<label>
+			<span>Name</span>
+			<input type="text" name="c_name">
+		</label>
+		<label>
+			<span>Phone Number</span>
+			<input type="tel" name="c_phone">
+		</label>
+	</div>
+	<div class="form-row form-row-columns">
+		<label>
+			<span>Email</span>
+			<input type="email" name="c_email">
+		</label>
+		<label>
+			<span>Number of Guests</span>
+			<input type="number" name="c_guests" min="1" max="6" value="2">
+		</label>
+	</div>
+	<div class="form-row">
+		<span>Requested Dates</span>
+		<label>
+			<small class="fromto">from</small>
+			<input type="date" name="c_date_start" min="2026-04-08">
+		</label>
+		<label>
+			<small class="fromto">to</small>
+			<input type="date" name="c_date_end" min="2026-04-08">
+		</label>
+	</div>
+	<div class="form-row">
+		<label>
+			<span>Comments or Questions</span>
+			<textarea name="c_comments"></textarea>
+		</label>
+	</div>
+	<div class="form-row">
+		<input type="hidden" name="tos" value="0">
+		<input type="text" name="email" value="">
+		<button type="submit">Send</button>
+	</div>
+</form>
+
+<div class="booking_form_status" style="display:none;"></div>
+</section>
+
+<section class="weather">
+	<h3>Weather Forecast</h3>
+	
+	<ul>
+	</ul>
+	
+	<a href="directions.html#" class="switch_degrees">Switch to &deg;C</a>
+</section>
+
+
+	<div class="mobile-menu-overlay"></div>
+
+</main>
+	
+	<footer>
+		
+		<div class="row">
+			<div class="column quarter">
+				<h5>Location</h5>
+				<p><span>622</span> Villa with a View</p>
+				<p>6281 Estate Nazareth</p>
+				<p>St. Thomas, 00802-1114</p>
+				<p>Virgin Islands (USA)</p>
+				<p><a href="directions.html">View Map</a></p>
+				<br>
+				<p>Tel. <a href="tel:1-340-775-6000">+1 340-775-6000</a></p>
+			</div>
+			
+			<div class="column threequarter footerview">
+				
+			</div>
+		</div>
+		
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.3.min.js"><\/script>')</script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.simpleWeather.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
